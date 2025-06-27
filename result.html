@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        body {
+            background: #f9f9f9;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 700px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: auto;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #e96c05;
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: #e74c3c;
+        }
+        img {
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Prediction Result</h3>
+        </div>
+        <h4><strong>Predicted Class:</strong> {{ class_label }}</h4>
+        <img src="data:image/png;base64,{{ img_data }}" width="300">
+        <br>
+        <a href="/" class="button">Upload Another Image</a>
+    </div>
+</body>
+</html>
